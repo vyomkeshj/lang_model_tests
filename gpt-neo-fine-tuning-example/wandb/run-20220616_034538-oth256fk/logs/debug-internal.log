@@ -1,0 +1,92 @@
+2022-06-16 03:45:39,576 INFO    MainThread:219965 [internal.py:wandb_internal():90] W&B internal server running at pid: 219965, started at: 2022-06-16 03:45:39.574879
+2022-06-16 03:45:39,578 INFO    WriterThread:219965 [datastore.py:open_for_write():75] open: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/run-oth256fk.wandb
+2022-06-16 03:45:39,580 DEBUG   SenderThread:219965 [sender.py:send():232] send: header
+2022-06-16 03:45:39,580 DEBUG   SenderThread:219965 [sender.py:send():232] send: run
+2022-06-16 03:45:39,792 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: check_version
+2022-06-16 03:45:39,794 INFO    SenderThread:219965 [dir_watcher.py:__init__():197] watching files in: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files
+2022-06-16 03:45:39,795 INFO    SenderThread:219965 [sender.py:_start_run_threads():811] run started: oth256fk with start time 1655343938
+2022-06-16 03:45:39,795 DEBUG   SenderThread:219965 [sender.py:send():232] send: summary
+2022-06-16 03:45:39,797 INFO    SenderThread:219965 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-16 03:45:39,798 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: check_version
+2022-06-16 03:45:39,866 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: run_start
+2022-06-16 03:45:39,874 DEBUG   HandlerThread:219965 [meta.py:__init__():35] meta init
+2022-06-16 03:45:39,874 DEBUG   HandlerThread:219965 [meta.py:__init__():49] meta init done
+2022-06-16 03:45:39,874 DEBUG   HandlerThread:219965 [meta.py:probe():209] probe
+2022-06-16 03:45:39,881 DEBUG   HandlerThread:219965 [meta.py:_setup_git():199] setup git
+2022-06-16 03:45:39,894 DEBUG   HandlerThread:219965 [meta.py:_setup_git():206] setup git done
+2022-06-16 03:45:39,894 DEBUG   HandlerThread:219965 [meta.py:_save_pip():53] save pip
+2022-06-16 03:45:39,896 DEBUG   HandlerThread:219965 [meta.py:_save_pip():67] save pip done
+2022-06-16 03:45:39,896 DEBUG   HandlerThread:219965 [meta.py:_save_conda():74] save conda
+2022-06-16 03:45:40,798 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/conda-environment.yaml
+2022-06-16 03:45:40,798 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/requirements.txt
+2022-06-16 03:45:40,798 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/wandb-summary.json
+2022-06-16 03:45:41,768 DEBUG   HandlerThread:219965 [meta.py:_save_conda():84] save conda done
+2022-06-16 03:45:41,769 DEBUG   HandlerThread:219965 [meta.py:probe():247] probe done
+2022-06-16 03:45:41,774 DEBUG   SenderThread:219965 [sender.py:send():232] send: files
+2022-06-16 03:45:41,774 INFO    SenderThread:219965 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-16 03:45:41,779 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:45:41,779 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:45:41,798 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/conda-environment.yaml
+2022-06-16 03:45:41,798 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:45:41,798 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/wandb-metadata.json
+2022-06-16 03:45:41,931 DEBUG   SenderThread:219965 [sender.py:send():232] send: telemetry
+2022-06-16 03:45:42,280 INFO    Thread-11 :219965 [upload_job.py:push():132] Uploaded file /tmp/pbs.612940.isrv1/tmpze9kbq3twandb/z62rf9ij-wandb-metadata.json
+2022-06-16 03:45:48,805 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:45:57,202 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:45:57,203 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:46:08,682 DEBUG   SenderThread:219965 [sender.py:send():232] send: stats
+2022-06-16 03:46:10,832 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/config.yaml
+2022-06-16 03:46:12,358 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:46:12,359 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:46:27,517 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:46:27,517 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:46:36,898 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:46:38,900 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:46:39,470 DEBUG   SenderThread:219965 [sender.py:send():232] send: stats
+2022-06-16 03:46:42,908 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:46:42,908 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:46:43,906 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:46:45,908 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:46:56,018 INFO    Thread-7  :219965 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:46:58,065 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:46:58,066 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:47:11,885 DEBUG   SenderThread:219965 [sender.py:send():232] send: stats
+2022-06-16 03:47:13,251 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:47:13,251 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:47:28,409 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:47:28,409 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:47:42,605 DEBUG   SenderThread:219965 [sender.py:send():232] send: stats
+2022-06-16 03:47:43,572 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:47:43,572 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:47:58,730 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:47:58,731 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:48:13,353 DEBUG   SenderThread:219965 [sender.py:send():232] send: stats
+2022-06-16 03:48:13,895 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:48:13,895 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:48:29,055 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:48:29,055 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:48:44,215 DEBUG   HandlerThread:219965 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 03:48:44,216 DEBUG   SenderThread:219965 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 03:48:44,876 DEBUG   SenderThread:219965 [sender.py:send():232] send: stats
+2022-06-16 03:48:48,671 WARNING MainThread:219965 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-06-16 03:48:53,696 WARNING MainThread:219965 [internal.py:is_dead():387] Internal process exiting, parent pid 219910 disappeared
+2022-06-16 03:48:53,696 ERROR   MainThread:219965 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-06-16 03:48:53,877 INFO    WriterThread:219965 [datastore.py:close():279] close: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/run-oth256fk.wandb
+2022-06-16 03:48:53,988 INFO    SenderThread:219965 [sender.py:finish():1110] shutting down sender
+2022-06-16 03:48:53,988 INFO    SenderThread:219965 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-16 03:48:54,007 INFO    HandlerThread:219965 [handler.py:finish():806] shutting down handler
+2022-06-16 03:48:54,041 INFO    SenderThread:219965 [dir_watcher.py:finish():342] scan: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files
+2022-06-16 03:48:54,042 INFO    SenderThread:219965 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/wandb-summary.json wandb-summary.json
+2022-06-16 03:48:54,042 INFO    SenderThread:219965 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/wandb-metadata.json wandb-metadata.json
+2022-06-16 03:48:54,042 INFO    SenderThread:219965 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/requirements.txt requirements.txt
+2022-06-16 03:48:54,045 INFO    SenderThread:219965 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/config.yaml config.yaml
+2022-06-16 03:48:54,048 INFO    SenderThread:219965 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/conda-environment.yaml conda-environment.yaml
+2022-06-16 03:48:54,050 INFO    SenderThread:219965 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log output.log
+2022-06-16 03:48:54,053 INFO    SenderThread:219965 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-16 03:48:54,053 INFO    SenderThread:219965 [file_pusher.py:join():150] waiting for file pusher
+2022-06-16 03:48:54,589 INFO    Thread-14 :219965 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/config.yaml
+2022-06-16 03:48:54,591 INFO    Thread-13 :219965 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/requirements.txt
+2022-06-16 03:48:54,606 INFO    Thread-15 :219965 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/conda-environment.yaml
+2022-06-16 03:48:54,613 INFO    Thread-16 :219965 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/output.log
+2022-06-16 03:48:54,619 INFO    Thread-12 :219965 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_034538-oth256fk/files/wandb-summary.json
+2022-06-16 03:48:55,207 INFO    MainThread:219965 [internal.py:handle_exit():80] Internal process exited

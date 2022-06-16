@@ -1,0 +1,156 @@
+2022-06-16 02:18:20,518 INFO    MainThread:998497 [internal.py:wandb_internal():90] W&B internal server running at pid: 998497, started at: 2022-06-16 02:18:20.517334
+2022-06-16 02:18:20,520 INFO    WriterThread:998497 [datastore.py:open_for_write():75] open: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/run-2vgzx1gr.wandb
+2022-06-16 02:18:20,522 DEBUG   SenderThread:998497 [sender.py:send():232] send: header
+2022-06-16 02:18:20,522 DEBUG   SenderThread:998497 [sender.py:send():232] send: run
+2022-06-16 02:18:20,706 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: check_version
+2022-06-16 02:18:20,711 INFO    SenderThread:998497 [dir_watcher.py:__init__():197] watching files in: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files
+2022-06-16 02:18:20,711 INFO    SenderThread:998497 [sender.py:_start_run_threads():811] run started: 2vgzx1gr with start time 1655338700
+2022-06-16 02:18:20,711 DEBUG   SenderThread:998497 [sender.py:send():232] send: summary
+2022-06-16 02:18:20,712 INFO    SenderThread:998497 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-16 02:18:20,713 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: check_version
+2022-06-16 02:18:20,779 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: run_start
+2022-06-16 02:18:20,786 DEBUG   HandlerThread:998497 [meta.py:__init__():35] meta init
+2022-06-16 02:18:20,786 DEBUG   HandlerThread:998497 [meta.py:__init__():49] meta init done
+2022-06-16 02:18:20,787 DEBUG   HandlerThread:998497 [meta.py:probe():209] probe
+2022-06-16 02:18:20,793 DEBUG   HandlerThread:998497 [meta.py:_setup_git():199] setup git
+2022-06-16 02:18:20,805 DEBUG   HandlerThread:998497 [meta.py:_setup_git():206] setup git done
+2022-06-16 02:18:20,805 DEBUG   HandlerThread:998497 [meta.py:_save_pip():53] save pip
+2022-06-16 02:18:20,807 DEBUG   HandlerThread:998497 [meta.py:_save_pip():67] save pip done
+2022-06-16 02:18:20,807 DEBUG   HandlerThread:998497 [meta.py:_save_conda():74] save conda
+2022-06-16 02:18:21,713 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/requirements.txt
+2022-06-16 02:18:21,714 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/wandb-summary.json
+2022-06-16 02:18:21,714 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/conda-environment.yaml
+2022-06-16 02:18:22,259 DEBUG   HandlerThread:998497 [meta.py:_save_conda():84] save conda done
+2022-06-16 02:18:22,259 DEBUG   HandlerThread:998497 [meta.py:probe():247] probe done
+2022-06-16 02:18:22,265 DEBUG   SenderThread:998497 [sender.py:send():232] send: files
+2022-06-16 02:18:22,265 INFO    SenderThread:998497 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-06-16 02:18:22,268 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-16 02:18:22,269 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: stop_status
+2022-06-16 02:18:22,422 DEBUG   SenderThread:998497 [sender.py:send():232] send: telemetry
+2022-06-16 02:18:22,422 DEBUG   SenderThread:998497 [sender.py:send():232] send: config
+2022-06-16 02:18:22,423 DEBUG   SenderThread:998497 [sender.py:send():232] send: metric
+2022-06-16 02:18:22,423 DEBUG   SenderThread:998497 [sender.py:send():232] send: telemetry
+2022-06-16 02:18:22,423 DEBUG   SenderThread:998497 [sender.py:send():232] send: metric
+2022-06-16 02:18:22,423 WARNING SenderThread:998497 [sender.py:send_metric():904] Seen metric with glob (shouldn't happen)
+2022-06-16 02:18:22,423 DEBUG   SenderThread:998497 [sender.py:send():232] send: telemetry
+2022-06-16 02:18:22,714 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/conda-environment.yaml
+2022-06-16 02:18:22,714 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/output.log
+2022-06-16 02:18:22,714 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_created():244] file/dir created: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/wandb-metadata.json
+2022-06-16 02:18:22,777 INFO    Thread-11 :998497 [upload_job.py:push():132] Uploaded file /tmp/pbs.612938.isrv1/tmp1kh4ys3qwandb/31udx00v-wandb-metadata.json
+2022-06-16 02:18:23,264 DEBUG   SenderThread:998497 [sender.py:send():232] send: telemetry
+2022-06-16 02:18:24,716 INFO    Thread-7  :998497 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/output.log
+2022-06-16 02:18:25,288 DEBUG   SenderThread:998497 [sender.py:send():232] send: exit
+2022-06-16 02:18:25,289 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:25,289 INFO    SenderThread:998497 [sender.py:send_exit():368] handling exit code: 1
+2022-06-16 02:18:25,289 INFO    SenderThread:998497 [sender.py:send_exit():370] handling runtime: 4
+2022-06-16 02:18:25,291 INFO    SenderThread:998497 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-16 02:18:25,291 INFO    SenderThread:998497 [sender.py:send_exit():376] send defer
+2022-06-16 02:18:25,291 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:25,291 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,291 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-16 02:18:25,292 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,292 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-06-16 02:18:25,292 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 1
+2022-06-16 02:18:25,292 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,292 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-16 02:18:25,382 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,382 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-06-16 02:18:25,382 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 2
+2022-06-16 02:18:25,382 DEBUG   SenderThread:998497 [sender.py:send():232] send: stats
+2022-06-16 02:18:25,383 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,383 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-16 02:18:25,383 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,383 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-06-16 02:18:25,383 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 3
+2022-06-16 02:18:25,383 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,383 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-16 02:18:25,383 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,383 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-06-16 02:18:25,383 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 4
+2022-06-16 02:18:25,383 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,383 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-16 02:18:25,384 DEBUG   SenderThread:998497 [sender.py:send():232] send: summary
+2022-06-16 02:18:25,385 INFO    SenderThread:998497 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-06-16 02:18:25,385 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,385 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-06-16 02:18:25,385 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 5
+2022-06-16 02:18:25,386 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,386 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-16 02:18:25,386 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,386 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-06-16 02:18:25,393 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:25,606 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 6
+2022-06-16 02:18:25,606 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:25,607 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,607 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-16 02:18:25,607 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,607 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-06-16 02:18:25,607 INFO    SenderThread:998497 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-06-16 02:18:25,708 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:25,718 INFO    SenderThread:998497 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/wandb-summary.json
+2022-06-16 02:18:25,719 INFO    SenderThread:998497 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/config.yaml
+2022-06-16 02:18:25,719 INFO    SenderThread:998497 [dir_watcher.py:_on_file_modified():257] file/dir modified: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/output.log
+2022-06-16 02:18:25,719 INFO    SenderThread:998497 [dir_watcher.py:finish():342] scan: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files
+2022-06-16 02:18:25,719 INFO    SenderThread:998497 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/wandb-summary.json wandb-summary.json
+2022-06-16 02:18:25,720 INFO    SenderThread:998497 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/wandb-metadata.json wandb-metadata.json
+2022-06-16 02:18:25,720 INFO    SenderThread:998497 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/requirements.txt requirements.txt
+2022-06-16 02:18:25,722 INFO    SenderThread:998497 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/config.yaml config.yaml
+2022-06-16 02:18:25,725 INFO    SenderThread:998497 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/conda-environment.yaml conda-environment.yaml
+2022-06-16 02:18:25,727 INFO    SenderThread:998497 [dir_watcher.py:finish():356] scan save: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/output.log output.log
+2022-06-16 02:18:25,730 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 7
+2022-06-16 02:18:25,730 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:25,730 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:25,732 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-16 02:18:25,733 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:25,733 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-06-16 02:18:25,733 INFO    SenderThread:998497 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-16 02:18:25,832 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:25,832 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:25,933 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:25,933 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,035 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:26,035 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,136 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:26,136 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,229 INFO    Thread-12 :998497 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/wandb-summary.json
+2022-06-16 02:18:26,238 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:26,238 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,251 INFO    Thread-13 :998497 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/requirements.txt
+2022-06-16 02:18:26,253 INFO    Thread-16 :998497 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/output.log
+2022-06-16 02:18:26,273 INFO    Thread-14 :998497 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/config.yaml
+2022-06-16 02:18:26,300 INFO    Thread-15 :998497 [upload_job.py:push():132] Uploaded file /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/files/conda-environment.yaml
+2022-06-16 02:18:26,339 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:26,339 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,440 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:26,440 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,500 INFO    Thread-6 (_thread_body):998497 [sender.py:transition_state():389] send defer: 8
+2022-06-16 02:18:26,500 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:26,500 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-16 02:18:26,501 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:26,501 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-06-16 02:18:26,541 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:26,975 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 9
+2022-06-16 02:18:26,975 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:26,976 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:26,976 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-16 02:18:26,976 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:26,976 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-06-16 02:18:26,976 INFO    SenderThread:998497 [sender.py:transition_state():389] send defer: 10
+2022-06-16 02:18:26,976 DEBUG   SenderThread:998497 [sender.py:send():232] send: final
+2022-06-16 02:18:26,976 DEBUG   SenderThread:998497 [sender.py:send():232] send: footer
+2022-06-16 02:18:26,977 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: defer
+2022-06-16 02:18:26,977 INFO    HandlerThread:998497 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-16 02:18:26,977 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: defer
+2022-06-16 02:18:26,977 INFO    SenderThread:998497 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-06-16 02:18:27,077 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-16 02:18:27,077 DEBUG   SenderThread:998497 [sender.py:send_request():246] send_request: poll_exit
+2022-06-16 02:18:27,077 INFO    SenderThread:998497 [file_pusher.py:join():150] waiting for file pusher
+2022-06-16 02:18:27,475 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-16 02:18:27,476 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-16 02:18:27,476 DEBUG   HandlerThread:998497 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-16 02:18:27,476 INFO    HandlerThread:998497 [handler.py:finish():806] shutting down handler
+2022-06-16 02:18:27,977 INFO    WriterThread:998497 [datastore.py:close():279] close: /scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/wandb/run-20220616_021820-2vgzx1gr/run-2vgzx1gr.wandb
+2022-06-16 02:18:28,375 INFO    SenderThread:998497 [sender.py:finish():1110] shutting down sender
+2022-06-16 02:18:28,375 INFO    SenderThread:998497 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-16 02:18:28,375 INFO    SenderThread:998497 [file_pusher.py:join():150] waiting for file pusher
+2022-06-16 02:18:28,376 INFO    MainThread:998497 [internal.py:handle_exit():80] Internal process exited

@@ -1,0 +1,69 @@
+
+
+  0%|                                                                                                                           | 1/1505 [00:15<6:30:19, 15.57s/it]
+[2022-06-16 03:14:26,197] [INFO] [stage3.py:2281:_overflow_clean_up] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 4294967296, reducing to 4294967296
+
+  0%|▏                                                                                                                          | 2/1505 [00:29<6:06:24, 14.63s/it]
+
+
+  0%|▎                                                                                                                          | 4/1505 [00:58<6:02:42, 14.50s/it]
+[2022-06-16 03:15:08,866] [INFO] [stage3.py:2281:_overflow_clean_up] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 1073741824.0, reducing to 536870912.0
+
+  0%|▍                                                                                                                          | 5/1505 [01:12<6:03:27, 14.54s/it]
+
+  0%|▍                                                                                                                          | 6/1505 [01:25<5:49:19, 13.98s/it]
+
+  0%|▌                                                                                                                          | 7/1505 [01:40<5:53:27, 14.16s/it]
+
+  1%|▋                                                                                                                          | 8/1505 [01:54<5:54:00, 14.19s/it]
+
+  1%|▋                                                                                                                          | 9/1505 [02:05<5:32:10, 13.32s/it]
+[2022-06-16 03:16:28,902] [INFO] [stage3.py:2281:_overflow_clean_up] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 16777216.0, reducing to 8388608.0
+[2022-06-16 03:16:28,902] [INFO] [logging.py:69:log_dist] [Rank 0] step=10, skipped=10, lr=[5e-05], mom=[[0.9, 0.999]]
+
+  1%|▊                                                                                                                         | 10/1505 [02:18<5:24:25, 13.02s/it]
+
+  1%|▉                                                                                                                         | 11/1505 [02:31<5:28:13, 13.18s/it]
+
+
+  1%|█                                                                                                                         | 13/1505 [02:58<5:30:27, 13.29s/it]
+[2022-06-16 03:17:09,180] [INFO] [stage3.py:2281:_overflow_clean_up] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 2097152.0, reducing to 1048576.0
+
+  1%|█▏                                                                                                                        | 14/1505 [03:12<5:34:12, 13.45s/it]
+
+
+  1%|█▎                                                                                                                        | 16/1505 [03:38<5:28:18, 13.23s/it]
+[2022-06-16 03:17:49,274] [INFO] [stage3.py:2281:_overflow_clean_up] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 262144.0, reducing to 131072.0
+
+  1%|█▍                                                                                                                        | 17/1505 [03:51<5:24:48, 13.10s/it]
+
+
+  1%|█▌                                                                                                                        | 19/1505 [04:19<5:40:17, 13.74s/it]
+[2022-06-16 03:18:46,368] [INFO] [logging.py:69:log_dist] [Rank 0] step=20, skipped=18, lr=[7.525749891599529e-06], mom=[[0.9, 0.999]]
+
+
+
+
+  2%|█▊                                                                                                                        | 23/1505 [05:20<6:00:49, 14.61s/it]
+
+
+
+
+
+
+  2%|██▎                                                                                                                       | 29/1505 [06:54<6:17:55, 15.36s/it]
+[2022-06-16 03:21:20,650] [INFO] [logging.py:69:log_dist] [Rank 0] step=30, skipped=19, lr=[2.6034817128955623e-05], mom=[[0.9, 0.999]]
+
+
+
+
+
+
+
+
+
+
+  3%|███▏                                                                                                                      | 39/1505 [09:31<6:21:57, 15.63s/it]
+[2022-06-16 03:23:57,624] [INFO] [logging.py:69:log_dist] [Rank 0] step=40, skipped=19, lr=[3.305548236834798e-05], mom=[[0.9, 0.999]]
+
+

@@ -1,0 +1,40 @@
+[W socket.cpp:401] [c10d] The server socket cannot be initialized on [::]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:558] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:558] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[2022-06-16 03:44:07,046] [INFO] [distributed.py:48:init_distributed] Initializing torch distributed with backend: nccl
+[2022-06-16 03:44:37,962] [INFO] [partition_parameters.py:463:__exit__] finished initializing model with 6.05B parameters
+Using custom data configuration default-09a0c5a4c7e74dbb
+Reusing dataset text (/home/vyomkeshj/.cache/huggingface/datasets/text/default-09a0c5a4c7e74dbb/0.0.0/08f6fb1dd2dab0a18ea441c359e1d63794ea8cb53e7863e6edf8fc5655e47ec4)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 215.73it/s]
+Using custom data configuration default-3cb01cf7977b9a02
+Reusing dataset text (/home/vyomkeshj/.cache/huggingface/datasets/text/default-3cb01cf7977b9a02/0.0.0/08f6fb1dd2dab0a18ea441c359e1d63794ea8cb53e7863e6edf8fc5655e47ec4)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 918.59it/s]
+Using amp half precision backend
+[2022-06-16 03:45:09,513] [INFO] [logging.py:69:log_dist] [Rank 0] DeepSpeed info: version=0.6.5, git-hash=unknown, git-branch=unknown
+[2022-06-16 03:45:10,311] [INFO] [engine.py:278:__init__] DeepSpeed Flops Profiler Enabled: False
+Traceback (most recent call last):
+  File "/scratch/project/dd-21-23/test/gpt-neo-fine-tuning-example/./gpt_j_deepspeed.py", line 75, in <module>
+    'labels': torch.stack([f[0] for f in data])}).train()
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/transformers/trainer.py", line 1165, in train
+    deepspeed_engine, optimizer, lr_scheduler = deepspeed_init(
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/transformers/deepspeed.py", line 426, in deepspeed_init
+    deepspeed_engine, optimizer, _, lr_scheduler = deepspeed.initialize(**kwargs)
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/__init__.py", line 120, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 294, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1098, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1186, in _configure_basic_optimizer
+    optimizer = DeepSpeedCPUAdam(model_parameters,
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/ops/adam/cpu_adam.py", line 83, in __init__
+    self.ds_opt_adam = CPUAdamBuilder().load()
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 463, in load
+    return self.jit_load(verbose)
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 478, in jit_load
+    assert_no_cuda_mismatch()
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 89, in assert_no_cuda_mismatch
+    cuda_major, cuda_minor = installed_cuda_version()
+  File "/home/vyomkeshj/.conda/envs/ml_test/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 41, in installed_cuda_version
+    assert cuda_home is not None, "CUDA_HOME does not exist, unable to compile CUDA op(s)"
+AssertionError: CUDA_HOME does not exist, unable to compile CUDA op(s)

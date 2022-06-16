@@ -1,0 +1,424 @@
+[W socket.cpp:401] [c10d] The server socket cannot be initialized on [::]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:558] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:558] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[2022-06-16 04:08:27,979] [INFO] [distributed.py:48:init_distributed] Initializing torch distributed with backend: nccl
+[2022-06-16 04:08:49,315] [INFO] [partition_parameters.py:463:__exit__] finished initializing model with 6.05B parameters
+Using custom data configuration default-09a0c5a4c7e74dbb
+Reusing dataset text (/home/vyomkeshj/.cache/huggingface/datasets/text/default-09a0c5a4c7e74dbb/0.0.0/08f6fb1dd2dab0a18ea441c359e1d63794ea8cb53e7863e6edf8fc5655e47ec4)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 860.72it/s]
+Using custom data configuration default-3cb01cf7977b9a02
+Reusing dataset text (/home/vyomkeshj/.cache/huggingface/datasets/text/default-3cb01cf7977b9a02/0.0.0/08f6fb1dd2dab0a18ea441c359e1d63794ea8cb53e7863e6edf8fc5655e47ec4)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 1088.02it/s]
+[2022-06-16 04:09:21,778] [INFO] [logging.py:69:log_dist] [Rank 0] DeepSpeed info: version=0.6.5, git-hash=unknown, git-branch=unknown
+[2022-06-16 04:09:21,899] [INFO] [engine.py:278:__init__] DeepSpeed Flops Profiler Enabled: False
+Using amp half precision backend
+Using /home/vyomkeshj/.cache/torch_extensions/py310_cu111 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 0.38310837745666504 seconds
+Adam Optimizer #0 is created with AVX2 arithmetic capability.
+Config: alpha=0.000050, betas=(0.900000, 0.999000), weight_decay=0.000000, adam_w=1
+[2022-06-16 04:09:23,394] [INFO] [engine.py:1100:_configure_optimizer] Using DeepSpeed Optimizer param name adamw as basic optimizer
+[2022-06-16 04:09:23,409] [INFO] [engine.py:1108:_configure_optimizer] DeepSpeed Basic Optimizer = DeepSpeedCPUAdam
+[2022-06-16 04:09:23,410] [INFO] [utils.py:52:is_zero_supported_optimizer] Checking ZeRO support for optimizer=DeepSpeedCPUAdam type=<class 'deepspeed.ops.adam.cpu_adam.DeepSpeedCPUAdam'>
+[2022-06-16 04:09:23,410] [INFO] [logging.py:69:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer
+[2022-06-16 04:09:23,410] [INFO] [engine.py:1410:_configure_zero_optimizer] Initializing ZeRO Stage 3
+[2022-06-16 04:09:23,418] [INFO] [stage3.py:275:__init__] Reduce bucket size 500000000
+[2022-06-16 04:09:23,418] [INFO] [stage3.py:276:__init__] Prefetch bucket size 50000000
+Using /home/vyomkeshj/.cache/torch_extensions/py310_cu111 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.10258173942565918 seconds
+[2022-06-16 04:09:33,490] [INFO] [stage3.py:567:_setup_for_real_optimizer] optimizer state initialized
+***** Running training *****
+  Num examples = 6300
+  Num Epochs = 3
+  Instantaneous batch size per device = 4
+  Total train batch size (w. parallel, distributed & accumulation) = 16
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1182
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0%|                                                                                                                                     | 0/1182 [00:00<?, ?it/s]
+[2022-06-16 04:09:34,801] [INFO] [utils.py:828:see_memory_usage] After initializing ZeRO optimizer
+[2022-06-16 04:09:34,802] [INFO] [utils.py:829:see_memory_usage] MA 1.04 GB         Max_MA 1.81 GB         CA 2.47 GB         Max_CA 2 GB
+[2022-06-16 04:09:34,802] [INFO] [utils.py:837:see_memory_usage] CPU Virtual Memory:  used = 145.94 GB, percent = 77.9%
+[2022-06-16 04:09:34,802] [INFO] [logging.py:69:log_dist] [Rank 0] DeepSpeed Final Optimizer = adamw
+[2022-06-16 04:09:34,802] [INFO] [engine.py:785:_configure_lr_scheduler] DeepSpeed using configured LR scheduler = WarmupLR
+[2022-06-16 04:09:34,802] [INFO] [logging.py:69:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupLR object at 0x14e3a234ba00>
+[2022-06-16 04:09:34,802] [INFO] [logging.py:69:log_dist] [Rank 0] step=0, skipped=0, lr=[5e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:09:34,803] [INFO] [config.py:1059:print] DeepSpeedEngine configuration:
+[2022-06-16 04:09:34,803] [INFO] [config.py:1063:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2022-06-16 04:09:34,803] [INFO] [config.py:1063:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2022-06-16 04:09:34,803] [INFO] [config.py:1063:print]   amp_enabled .................. False
+[2022-06-16 04:09:34,803] [INFO] [config.py:1063:print]   amp_params ................... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": null,
+    "exps_dir": null,
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   bfloat16_enabled ............. True
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   checkpoint_tag_validation_enabled  True
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   checkpoint_tag_validation_fail  False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   communication_data_type ...... None
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   curriculum_enabled ........... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   curriculum_params ............ False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   dataloader_drop_last ......... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   disable_allgather ............ False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   dump_state ................... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   dynamic_loss_scale_args ...... None
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_enabled ........... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_gas_boundary_resolution  1
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_layer_num ......... 0
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_max_iter .......... 100
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_stability ......... 1e-06
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_tol ............... 0.01
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   eigenvalue_verbose ........... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   elasticity_enabled ........... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   fp16_enabled ................. False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   fp16_master_weights_and_gradients  False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   fp16_mixed_quantize .......... False
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   global_rank .................. 0
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   gradient_accumulation_steps .. 1
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   gradient_clipping ............ 0.0
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   gradient_predivide_factor .... 1.0
+[2022-06-16 04:09:34,804] [INFO] [config.py:1063:print]   initial_dynamic_scale ........ 1
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   loss_scale ................... 1.0
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   memory_breakdown ............. False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   optimizer_legacy_fusion ...... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   optimizer_name ............... adamw
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   optimizer_params ............. {'lr': 5e-05, 'betas': [0.9, 0.999], 'eps': 1e-08}
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   pld_enabled .................. False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   pld_params ................... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   prescale_gradients ........... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_change_rate ......... 0.001
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_groups .............. 1
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_offset .............. 1000
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_period .............. 1000
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_rounding ............ 0
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_start_bits .......... 16
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_target_bits ......... 8
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_training_enabled .... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_type ................ 0
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   quantize_verbose ............. False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   scheduler_name ............... WarmupLR
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   scheduler_params ............. {'warmup_min_lr': 0, 'warmup_max_lr': 5e-05, 'warmup_num_steps': 100}
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   sparse_attention ............. None
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   sparse_gradients_enabled ..... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   steps_per_print .............. 10
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   tensorboard_enabled .......... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   tensorboard_job_name ......... DeepSpeedJobName
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   tensorboard_output_path ......
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   train_batch_size ............. 16
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   train_micro_batch_size_per_gpu  4
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   use_quantizer_kernel ......... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   wall_clock_breakdown ......... False
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   world_size ................... 4
+[2022-06-16 04:09:34,805] [INFO] [config.py:1063:print]   zero_allow_untested_optimizer  False
+[2022-06-16 04:09:34,806] [INFO] [config.py:1063:print]   zero_config .................. {
+    "stage": 3,
+    "contiguous_gradients": true,
+    "reduce_scatter": true,
+    "reduce_bucket_size": 5.000000e+08,
+    "allgather_partitions": true,
+    "allgather_bucket_size": 5.000000e+08,
+    "overlap_comm": true,
+    "load_from_fp32_weights": true,
+    "elastic_checkpoint": false,
+    "offload_param": {
+        "device": "cpu",
+        "nvme_path": null,
+        "buffer_count": 5,
+        "buffer_size": 1.000000e+08,
+        "max_in_cpu": 1.000000e+09,
+        "pin_memory": false
+    },
+    "offload_optimizer": {
+        "device": "cpu",
+        "nvme_path": null,
+        "buffer_count": 4,
+        "pin_memory": false,
+        "pipeline_read": false,
+        "pipeline_write": false,
+        "fast_init": false,
+        "pipeline": false
+    },
+    "sub_group_size": 1.000000e+09,
+    "prefetch_bucket_size": 5.000000e+07,
+    "param_persistence_threshold": 1.000000e+05,
+    "max_live_parameters": 1.000000e+09,
+    "max_reuse_distance": 1.000000e+09,
+    "gather_16bit_weights_on_model_save": false,
+    "ignore_unused_parameters": true,
+    "round_robin_gradients": false,
+    "legacy_stage1": false
+}
+[2022-06-16 04:09:34,806] [INFO] [config.py:1063:print]   zero_enabled ................. True
+[2022-06-16 04:09:34,806] [INFO] [config.py:1063:print]   zero_optimization_stage ...... 3
+[2022-06-16 04:09:34,806] [INFO] [config.py:1065:print]   json = {
+    "train_batch_size": 16,
+    "bf16": {
+        "enabled": true,
+        "min_loss_scale": 1,
+        "opt_level": "O3"
+    },
+    "zero_optimization": {
+        "stage": 3,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "offload_optimizer": {
+            "device": "cpu"
+        },
+        "allgather_partitions": true,
+        "allgather_bucket_size": 5.000000e+08,
+        "contiguous_gradients": true
+    },
+    "optimizer": {
+        "type": "AdamW",
+        "params": {
+            "lr": 5e-05,
+            "betas": [0.9, 0.999],
+            "eps": 1e-08
+        }
+    },
+    "scheduler": {
+        "type": "WarmupLR",
+        "params": {
+            "warmup_min_lr": 0,
+            "warmup_max_lr": 5e-05,
+            "warmup_num_steps": 100
+        }
+    }
+}
+Using /home/vyomkeshj/.cache/torch_extensions/py310_cu111 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0006244182586669922 seconds
+
+  0%|                                                                                                                           | 1/1182 [00:17<5:50:11, 17.79s/it]
+
+  0%|▏                                                                                                                          | 2/1182 [00:34<5:33:24, 16.95s/it]
+
+
+  0%|▍                                                                                                                          | 4/1182 [01:06<5:25:08, 16.56s/it]
+
+  0%|▌                                                                                                                          | 5/1182 [01:21<5:09:54, 15.80s/it]
+{'loss': 1.6387, 'learning_rate': 1.7474250108400467e-05, 'epoch': 0.01}
+
+
+  1%|▋                                                                                                                          | 7/1182 [01:51<5:03:01, 15.47s/it]
+
+  1%|▊                                                                                                                          | 8/1182 [02:06<5:00:27, 15.36s/it]
+
+  1%|▉                                                                                                                          | 9/1182 [02:20<4:50:45, 14.87s/it]
+
+  1%|█                                                                                                                         | 10/1182 [02:33<4:39:56, 14.33s/it]
+[2022-06-16 04:12:08,562] [INFO] [logging.py:69:log_dist] [Rank 0] step=10, skipped=0, lr=[2.4999999999999998e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:12:08,563] [INFO] [timer.py:193:stop] 0/10, SamplesPerSec=1.0741714216733556, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+  1%|█▏                                                                                                                        | 11/1182 [02:46<4:29:30, 13.81s/it]
+
+  1%|█▏                                                                                                                        | 12/1182 [03:00<4:30:48, 13.89s/it]
+
+  1%|█▎                                                                                                                        | 13/1182 [03:14<4:31:38, 13.94s/it]
+
+  1%|█▍                                                                                                                        | 14/1182 [03:29<4:37:01, 14.23s/it]
+{'loss': 0.6763, 'learning_rate': 2.8653200891955945e-05, 'epoch': 0.04}
+
+  1%|█▌                                                                                                                        | 15/1182 [03:44<4:39:51, 14.39s/it]
+
+
+  1%|█▊                                                                                                                        | 17/1182 [04:12<4:36:57, 14.26s/it]
+
+  2%|█▊                                                                                                                        | 18/1182 [04:26<4:35:08, 14.18s/it]
+
+  2%|█▉                                                                                                                        | 19/1182 [04:41<4:39:29, 14.42s/it]
+{'loss': 0.54, 'learning_rate': 3.1968840023820715e-05, 'epoch': 0.05}
+[2022-06-16 04:14:30,614] [INFO] [logging.py:69:log_dist] [Rank 0] step=20, skipped=0, lr=[3.2525749891599525e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:14:30,615] [INFO] [timer.py:193:stop] 0/20, SamplesPerSec=1.1044571049720553, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+
+  2%|██▏                                                                                                                       | 21/1182 [05:09<4:32:45, 14.10s/it]
+{'loss': 0.5352, 'learning_rate': 3.305548236834798e-05, 'epoch': 0.05}
+
+
+  2%|██▎                                                                                                                       | 23/1182 [05:38<4:39:57, 14.49s/it]
+{'loss': 0.5251, 'learning_rate': 3.404319590043982e-05, 'epoch': 0.06}
+
+  2%|██▍                                                                                                                       | 24/1182 [05:54<4:45:45, 14.81s/it]
+
+  2%|██▌                                                                                                                       | 25/1182 [06:08<4:44:10, 14.74s/it]
+
+  2%|██▋                                                                                                                       | 26/1182 [06:22<4:39:32, 14.51s/it]
+
+
+  2%|██▉                                                                                                                       | 28/1182 [06:52<4:40:25, 14.58s/it]
+
+  2%|██▉                                                                                                                       | 29/1182 [07:06<4:41:05, 14.63s/it]
+
+  3%|███                                                                                                                       | 30/1182 [07:21<4:40:12, 14.59s/it]
+[2022-06-16 04:16:56,310] [INFO] [logging.py:69:log_dist] [Rank 0] step=30, skipped=0, lr=[3.6928031367991554e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:16:56,330] [INFO] [timer.py:193:stop] 0/30, SamplesPerSec=1.103421857431869, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+  3%|███▏                                                                                                                      | 31/1182 [07:36<4:41:45, 14.69s/it]
+
+  3%|███▎                                                                                                                      | 32/1182 [07:50<4:39:19, 14.57s/it]
+
+  3%|███▍                                                                                                                      | 33/1182 [08:05<4:39:28, 14.59s/it]
+
+  3%|███▌                                                                                                                      | 34/1182 [08:19<4:34:15, 14.33s/it]
+{'loss': 0.429, 'learning_rate': 3.8286972926056376e-05, 'epoch': 0.09}
+
+
+  3%|███▋                                                                                                                      | 36/1182 [08:46<4:30:40, 14.17s/it]
+{'loss': 0.2771, 'learning_rate': 3.890756251918218e-05, 'epoch': 0.09}
+
+  3%|███▊                                                                                                                      | 37/1182 [09:01<4:30:48, 14.19s/it]
+
+  3%|███▉                                                                                                                      | 38/1182 [09:15<4:29:59, 14.16s/it]
+
+
+  3%|████▏                                                                                                                     | 40/1182 [09:44<4:34:47, 14.44s/it]
+[2022-06-16 04:19:19,345] [INFO] [logging.py:69:log_dist] [Rank 0] step=40, skipped=0, lr=[4.005149978319905e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:19:19,346] [INFO] [timer.py:193:stop] 0/40, SamplesPerSec=1.1080409777329339, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+  3%|████▏                                                                                                                     | 41/1182 [09:59<4:37:51, 14.61s/it]
+
+  4%|████▎                                                                                                                     | 42/1182 [10:14<4:39:16, 14.70s/it]
+
+  4%|████▍                                                                                                                     | 43/1182 [10:29<4:38:16, 14.66s/it]
+{'loss': 0.6096, 'learning_rate': 4.0836711389489654e-05, 'epoch': 0.11}
+
+  4%|████▌                                                                                                                     | 44/1182 [10:43<4:37:46, 14.65s/it]
+
+  4%|████▋                                                                                                                     | 45/1182 [10:58<4:38:50, 14.71s/it]
+
+
+  4%|████▊                                                                                                                     | 47/1182 [11:25<4:25:14, 14.02s/it]
+{'loss': 0.3281, 'learning_rate': 4.180244644839293e-05, 'epoch': 0.12}
+
+  4%|████▉                                                                                                                     | 48/1182 [11:38<4:22:44, 13.90s/it]
+
+  4%|█████                                                                                                                     | 49/1182 [11:54<4:30:00, 14.30s/it]
+[2022-06-16 04:21:42,705] [INFO] [logging.py:69:log_dist] [Rank 0] step=50, skipped=0, lr=[4.247425010840046e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:21:42,706] [INFO] [timer.py:193:stop] 0/50, SamplesPerSec=1.1106007833831606, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+
+  4%|█████▎                                                                                                                    | 51/1182 [12:22<4:27:18, 14.18s/it]
+{'loss': 0.2551, 'learning_rate': 4.2689254402448405e-05, 'epoch': 0.13}
+
+
+  4%|█████▍                                                                                                                    | 53/1182 [12:50<4:28:40, 14.28s/it]
+
+  5%|█████▌                                                                                                                    | 54/1182 [13:05<4:31:41, 14.45s/it]
+
+  5%|█████▋                                                                                                                    | 55/1182 [13:20<4:36:04, 14.70s/it]
+
+  5%|█████▊                                                                                                                    | 56/1182 [13:35<4:35:38, 14.69s/it]
+{'loss': 0.2588, 'learning_rate': 4.370470067515501e-05, 'epoch': 0.14}
+
+  5%|█████▉                                                                                                                    | 57/1182 [13:50<4:35:17, 14.68s/it]
+
+  5%|█████▉                                                                                                                    | 58/1182 [14:04<4:33:42, 14.61s/it]
+
+  5%|██████                                                                                                                    | 59/1182 [14:18<4:30:09, 14.43s/it]
+[2022-06-16 04:24:07,770] [INFO] [logging.py:69:log_dist] [Rank 0] step=60, skipped=0, lr=[4.445378125959108e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:24:07,770] [INFO] [timer.py:193:stop] 0/60, SamplesPerSec=1.1097991072935856, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+
+  5%|██████▎                                                                                                                   | 61/1182 [14:47<4:27:28, 14.32s/it]
+{'loss': 0.1746, 'learning_rate': 4.463324587526917e-05, 'epoch': 0.15}
+
+
+  5%|██████▌                                                                                                                   | 63/1182 [15:16<4:31:35, 14.56s/it]
+
+  5%|██████▌                                                                                                                   | 64/1182 [15:30<4:26:41, 14.31s/it]
+{'loss': 0.1284, 'learning_rate': 4.515449934959717e-05, 'epoch': 0.16}
+
+  5%|██████▋                                                                                                                   | 65/1182 [15:44<4:24:47, 14.22s/it]
+
+
+  6%|██████▉                                                                                                                   | 67/1182 [16:13<4:28:57, 14.47s/it]
+{'loss': 0.2047, 'learning_rate': 4.565187006752065e-05, 'epoch': 0.17}
+
+  6%|███████                                                                                                                   | 68/1182 [16:28<4:29:56, 14.54s/it]
+
+
+  6%|███████▏                                                                                                                  | 70/1182 [16:56<4:26:02, 14.35s/it]
+[2022-06-16 04:26:31,503] [INFO] [logging.py:69:log_dist] [Rank 0] step=70, skipped=0, lr=[4.612745100035642e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:26:31,504] [INFO] [timer.py:193:stop] 0/70, SamplesPerSec=1.110717450059945, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+  6%|███████▎                                                                                                                  | 71/1182 [17:10<4:22:07, 14.16s/it]
+{'loss': 0.1797, 'learning_rate': 4.628145871797688e-05, 'epoch': 0.18}
+
+  6%|███████▍                                                                                                                  | 72/1182 [17:25<4:25:36, 14.36s/it]
+
+  6%|███████▌                                                                                                                  | 73/1182 [17:40<4:31:32, 14.69s/it]
+
+
+  6%|███████▋                                                                                                                  | 75/1182 [18:09<4:29:26, 14.60s/it]
+
+  6%|███████▊                                                                                                                  | 76/1182 [18:24<4:28:40, 14.58s/it]
+
+  7%|███████▉                                                                                                                  | 77/1182 [18:38<4:27:30, 14.53s/it]
+
+  7%|████████                                                                                                                  | 78/1182 [18:53<4:28:27, 14.59s/it]
+{'loss': 0.1915, 'learning_rate': 4.7302365067262006e-05, 'epoch': 0.2}
+
+  7%|████████▏                                                                                                                 | 79/1182 [19:07<4:26:28, 14.50s/it]
+[2022-06-16 04:28:56,560] [INFO] [logging.py:69:log_dist] [Rank 0] step=80, skipped=0, lr=[4.757724967479858e-05], mom=[[0.9, 0.999]]
+[2022-06-16 04:28:56,560] [INFO] [timer.py:193:stop] 0/80, SamplesPerSec=1.1100578706936828, MemAllocated=1.04GB, MaxMemAllocated=7.84GB
+
+  7%|████████▎                                                                                                                 | 80/1182 [19:21<4:23:00, 14.32s/it]
+
+  7%|████████▎                                                                                                                 | 81/1182 [19:36<4:23:11, 14.34s/it]
+
+
+  7%|████████▌                                                                                                                 | 83/1182 [20:05<4:23:00, 14.36s/it]
+{'loss': 0.22, 'learning_rate': 4.7976952309401844e-05, 'epoch': 0.21}
+
+
+  7%|████████▊                                                                                                                 | 85/1182 [20:34<4:26:20, 14.57s/it]
+
+  7%|████████▉                                                                                                                 | 86/1182 [20:49<4:27:50, 14.66s/it]
+{'loss': 0.2664, 'learning_rate': 4.836246128108918e-05, 'epoch': 0.22}
+
+
+  7%|█████████                                                                                                                 | 88/1182 [21:17<4:20:45, 14.30s/it]
+{'loss': 0.265, 'learning_rate': 4.8612066803754214e-05, 'epoch': 0.22}
+
