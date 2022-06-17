@@ -1,0 +1,5 @@
+{
+  "type": "DeepSpeed",
+    "version": 0.3,
+    "checkpoint_path": "./checkpoint-750"
+}
