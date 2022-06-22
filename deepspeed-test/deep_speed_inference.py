@@ -13,12 +13,16 @@ torch.manual_seed(42)
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B", cache_dir=cache)
 tokenizer.pad_token = tokenizer.eos_token
 
-model = GPTJForCausalLM.from_pretrained("./results/checkpoint-750/", local_files_only=True).cpu()
+model = GPTJForCausalLM.from_pretrained("./results/checkpoint-500/", local_files_only=True).cpu()
 
 
 def ask_client(query, dframe, max_length=100):
     column_names = list(data.columns.values)
-    input = f"""Generate corresponding SQL. The table name is "insurance_data" Schema Json: "insurance_data":{column_names} Question: {query} SQL: """
+    input = f"""Take the database columns in the [Schema Json] section, question in [Question] section and generate SQL for the question on the schema.
+    [Schema Json]: "insurance_data":[insured_hobbies, incident_severity, 
+    authorities_contacted, incident_hour_of_the_day, number_of_vehicles_involved, 
+    property_damage, bodily_injuries, witnesses, police_report_available, total_claim_amount, injury_claim, property_claim, 
+    vehicle_claim, vehicle_manufacturer, auto_model,auto_year, fraud_reported] [Question]: {query} [SQL]: """
     print(input + "\n \n")
     tokens = tokenizer(input, return_tensors="pt").input_ids.cpu()
 
@@ -28,9 +32,9 @@ def ask_client(query, dframe, max_length=100):
                                     early_stopping=True,
                                     top_k=50,
                                     max_length=350,
-                                    top_p=0.95,
-                                    temperature=0.9,
-                                    num_return_sequences=2)
+                                    top_p=1.0,
+                                    temperature=0.8,
+                                    num_return_sequences=1)
     for i, sample_output in enumerate(sample_outputs):
         current_output = tokenizer.decode(sample_output, skip_special_tokens=True)
         output = tokenizer.decode(sample_outputs[0], skip_special_tokens=True)
@@ -57,5 +61,5 @@ data = pd.read_csv(DATA_CSV_FILE, sep=';')
 data.name = 'data'
 
 your_question = "How many people are over 43 and have a Saab?"
-question_2="Show me the customers with insured zip 466132"
+question_2="Show me the insured customers with who live in the zip 466132"
 ask_client(question_2, data)
